@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: antiquewhite;">
+    <header>
+        <nav>
+            <ul id="flexNav">
+                <img src="imagenes/logito.png" alt="">
+                <li> <a href="index.html" class="link">Inicio</a></li>
+                <li> <a href="nosotros.html" class="link">Sobre nosotros</a></li>
+                <li> <a href="proyectos.html" class="link">Proyectos y campañas</a></li>
+                <li> <a href="forms.html" class="link">Contacto</a></li>
+                <li id="boton-oculto1">
+                    <a href="#" class="donar" onclick="abrirModal()">Donar</a>
+                </li>
+                <li id="boton-oculto2" style="position: relative">
+                    <a href="#" class="donar" onclick="abrirModal()">Donar</a>
+                </li>
+                <button onclick="flexToggle()">☰</button> 
+            </ul>
+        </nav>
+    </header>
+
+   <section class="quienes">
+        <img src="imagenes/fotito.png" alt="">
+        <div id="texto-conocenos">
+            <h1>¿Quiénes somos?</h1>
+            <p>Somos un grupo de personas que realizan recorridas por Vicente López buscando gente que se encuentren en 
+            situación de vulnerabilidad, que no tengan un techo en donde puedan dormir ni un plato de comida a 
+            disposición. Nuestro propósito es visitarlos y hacerles compañía, y llevarles una porción de comida, 
+            ropa de abrigo, mantas, kits de higiene y y objetos de entretenimiento para ayudarlos a distraerse un 
+            poco de su dura realidad.</p>
+        </div>
+   </section>
+
+   <section class="hacemos">
+        <h2>¿Qué hacemos en cada recorrida?</h2>
+
+        <div class="hacemos-bloques">
+            <div class="hacemos-bloque">
+                <div class="hacemos-icono">🍲</div>
+                <h3>Comida y abrigo</h3>
+                <p>Llevamos una porción de comida, ropa de abrigo, mantas y kits de higiene.</p>
+            </div>
+
+            <div class="hacemos-bloque">
+                <div class="hacemos-icono">💙</div>
+                <h3>Compañía</h3>
+                <p>Nos quedamos a charlar y compartir un rato. Llevamos objetos de entretenimiento para distraernos un poco.</p>
+            </div>
+
+            <div class="hacemos-bloque">
+                <div class="hacemos-icono">📦</div>
+                <h3>Una caja para después</h3>
+                <p>Entregamos una bolsa o caja con mercadería no perecedera para que tengan comida disponible en los días siguientes.</p>
+            </div>
+        </div>
+    </section>
+
+   <footer id="footer">
+        <div class="footer-col">
+            <h3>Mapa del sitio</h3>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="proyectos.html">Proyectos y campañas</a></li>
+                <li><a href="forms.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contacto</h3>
+            <p>Mail: mail-de-la-ong@ejemplo.com</p>
+            <p>Teléfono: 11 0000-0000</p>
+            <p>Vicente López, Buenos Aires</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Suscribite</h3>
+            <p>Recibí novedades de Puentes.</p>
+            <input type="email" placeholder="Tu mail">
+            <button type="button">Enviar</button>
+        </div>
+    </footer>
+    <script src="script3.js"></script>
+</body>
+</html>

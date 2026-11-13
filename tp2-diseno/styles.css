@@ -1,0 +1,387 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+nav ul {display: flex; 
+    list-style: none;
+    gap: 20px;
+    background-color: rgb(139, 228, 255);
+    justify-content: center;
+    height: 10vh;
+    align-items: center; 
+    position: relative;
+    padding-right: 15px;
+}
+.donar {position: absolute;
+    right: 0;
+    top: 17px;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: burlywood;
+    padding: 15px;
+    border-radius: 15px;
+}
+nav img {width: 50px;
+    position: absolute; 
+    left: 0;
+    margin-left: 15px;
+    border-radius: 30px;
+}
+nav a {color: black;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+}
+nav button {display: none;
+    position: absolute;
+    right: 0;
+}
+
+
+.flexToggle {flex-direction: column;}
+#boton-oculto1 {display: block;}
+#boton-oculto2 { display: none;}
+
+
+#hero {display: flex;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+#hero img {height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#hero a {position: absolute;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: burlywood;
+    padding: 15px;
+    left: 50px;
+    bottom: 300px;
+    border-radius: 15px;
+}
+#hero h1 {display: inline;
+    position: absolute;
+    left: 10px;
+    top: 200px;
+    color: white;
+    font-size: 30px;
+}
+#hero p {display: inline;
+    position: absolute;
+    left: 10px;
+    top: 300px;
+    font-size: 20px;
+    color: white;
+}
+
+
+#opiniones {background-color: lightblue;
+    height: auto;
+}
+#texto-opiniones {background-color: rgb(139, 228, 255);
+    height: auto;
+    align-items: flex-start;
+}
+#texto-opiniones ul {display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 40px 20px;
+    position: relative;
+    align-items: flex-start
+}
+#texto-opiniones li {width: 25%;}
+#texto-opiniones img {width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+}
+#texto-opiniones p {font-size: 20px;}
+#texto-opiniones .abajo {position: relative;
+    margin-top: 300px;
+}
+
+#texto-conocenos {width: 50%;
+  text-align: left;
+  height: auto;
+}
+#texto-conocenos p {font-size: 20px;}
+
+.quienes {display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 40px;
+}
+.quienes img {width: 50%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hacemos h2 {margin-bottom: 10px;}
+.hacemos {
+  background-color: rgb(139, 228, 255);
+  padding: 40px 20px;
+  text-align: center;
+}
+.hacemos-bloques {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.hacemos-bloque {
+  width: 30%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+
+#enviar {width: 100px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.contenedor-form {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+}
+.foto-form {
+    width: 70vw;
+    height: 70vh;
+    border-radius: 15px;
+}
+
+.modal {background-color: burlywood;
+    width: 50vw;
+    height: 50vh;
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.donacionFinal {display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding: 30px;
+}
+.foto-modal {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+}
+
+#tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+.card {
+  width: 30%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.container {
+  padding: 15px;
+}
+.intro-proyectos {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px 0;
+  text-align: center;
+}
+.intro-proyectos h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.intro-proyectos p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#footer {background-color: burlywood; 
+    height: auto; 
+    width: 100%;  
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-col h3 {
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) 
+{
+    nav ul {
+        height: 100%;
+        gap: 0;
+        background-color:rgb(139, 228, 255);
+    }
+    nav a {line-height: 5vh;
+        display: none;
+        font-size: 15px;} 
+    nav li {
+        display: inline-block;
+        width: 100%;
+        height: 5vh;
+        text-align: center;
+    }
+    nav img {width: 40px;}
+    nav button {display: block;
+        height: 35px;
+        position: absolute;
+        right: 10px;
+        width: 20px;
+    }
+    .donar {position: static;
+        line-height: 5vh;
+        padding: 15px 20px;
+        display: inline-block;
+        height: 5vh;
+    }
+    .linkToggle {display: block;}
+
+
+    #hero p {
+        font-size: 15px;
+        left: 10px;
+        top: 150px;
+        bottom: auto;
+    }
+    #hero h1 {top: 100px;
+        bottom: auto;
+        font-size: 20px;
+    }
+    #hero {height: auto; 
+        min-height: 0;
+    }
+    #hero img { height: auto;
+        width: 100%;
+        object-fit: contain;
+    }
+    #hero a {bottom: 80px;
+        left: 10px;
+        right: auto;
+        top: auto;
+        font-size: 15px;
+        padding: 8px 14px;
+        border-radius: 10px;
+    }
+
+    #opiniones {height: auto;}
+    #texto-opiniones {height: auto;
+        padding-bottom: 20px;
+    }
+    #texto-opiniones ul {display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px 10px;
+        padding: 20px 10px;
+    }
+    #texto-opiniones li {
+        width: 45%;
+    }
+    #texto-opiniones .abajo {
+        margin-top: 0;
+    }
+    #texto-opiniones img {
+        width: 70%;
+        height: auto;
+    }
+    #texto-opiniones p {font-size: 15px;}
+    #texto-opiniones h2 {font-size: 20px;}
+
+
+    #boton-oculto1 {
+        display: none;
+    }
+    #boton-oculto2 {
+        display: none;
+    }
+    #flexNav.flexToggle #boton-oculto2 {
+        display: block;
+    }
+    #boton-oculto2 a {
+        display: block;
+        position: absolute;
+        background-color: burlywood;
+        line-height: 100%;
+        width: 100px;
+        height: 15px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 15px;  
+    }
+
+    #tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+    .intro-proyectos h1 { font-size: 20px;}
+    .intro-proyectos p { font-size: 15px;}
+
+    .donacionFinal h1, .donacionFinal h4 {font-size: 15px;}
+
+    .contenedor-form {flex-direction: column;}
+    .contenedor-form form, .foto-form {width: 100%;}
+    .foto-form {height: 40vh;
+        position: static;
+    }
+
+    .quienes {flex-direction: column;
+        padding: 30px 20px;
+    }
+    .quienes img {width: 100%;
+        height: auto;
+    }
+    #texto-conocenos {width: 100%;}
+    #texto-conocenos p {text-align: center;
+        font-size: 15px;
+    }
+    #texto-conocenos h1 {margin-bottom: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .hacemos-bloques {flex-direction: column;
+        align-items: center;
+    }
+    .hacemos-bloque {width: 90%;}
+
+    #footer {flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: antiquewhite;">
+    <header>
+        <nav>
+            <ul id="flexNav">
+                <img src="imagenes/logito.png" alt="">
+                <li> <a href="index.html" class="link">Inicio</a></li>
+                <li> <a href="nosotros.html" class="link">Sobre nosotros</a></li>
+                <li> <a href="proyectos.html" class="link">Proyectos y campañas</a></li>
+                <li> <a href="forms.html" class="link">Contacto</a></li>
+                <li id="boton-oculto1">
+                    <a href="#" class="donar" onclick="abrirModal()">Donar</a>
+                </li>
+                <li id="boton-oculto2" style="position: relative">
+                    <a href="#" class="donar" onclick="abrirModal()">Donar</a>
+                </li>
+                <button onclick="flexToggle()">☰</button> 
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="intro-proyectos">
+        <h1>Nuestros proyectos y campañas</h1>
+        <p>En Puentes trabajamos para acercarnos a las personas que más lo necesitan y acompañarlas con lo que está a nuestro alcance. Detrás de cada propuesta hay 
+            voluntarios, familias y vecinos de la comunidad que ponen tiempo, ideas y mucho cariño. <br> Todas las semanas hacemos recorridas para visitar a personas 
+            en situación de calle, y también compartimos espacios con niños y niñas, como el apoyo escolar. <br> A lo largo del año sumamos campañas especiales, 
+            como la Navidad o el abrigo en invierno. Conocé a continuación algunas de las que hicimos posible entre todos.
+        </p>
+    </section>
+    <section id="tarjetas">
+        <div class="card">
+            <img src="imagenes/cajasnavidenas.png" alt="cajas">
+            <div class="container">
+                <h4><b>Navidad Diferente</b></h4>
+                <p>Con la llegada de las fiestas, quisimos que las personas que visitamos pudieran vivir una Navidad distinta. Gracias al aporte de la comunidad, 
+                    preparamos 50 cajas navideñas con productos típicos de estas fechas: pan dulce, turrones, budines, galletitas, atún, paté, pionono, garrapiñadas, 
+                    duraznos en almíbar y gaseosas. <br> Además, algunas familias organizaron una colecta de juguetes con la que armamos regalos y tarjetas 
+                    personalizadas. Así, 45 niños recibieron un regalo de Navidad. <br> Gracias a quienes donaron, a las familias y a todos los que hacen Puentes.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imagenes/mantas.png" alt="mantas">
+            <div class="container">
+                <h4><b>Las Cuadraditas</b></h4>
+                <p>Cuando llega el invierno, las noches se vuelven muy difíciles para quienes viven en situación de calle. Por eso queremos agradecer al grupo de las 
+                    Cuadraditas de la parroquia La Asunción de la Virgen, que tejió cerca de 200 mantas con mucho amor para las personas que visitamos los lunes. <br>
+                    Fueron de gran ayuda para afrontar las noches frías de invierno, y cada una llegó con algo más que abrigo: el cariño de quienes las hicieron. <br>
+                    ¡Gracias, Cuadraditas, por ser parte de Puentes!
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imagenes/puentelita.png" alt="escuela">
+            <div class="container">
+                <h4><b>La Puentelita</b></h4>
+                <p>La Puentelita es un grupo de apoyo escolar brindado por voluntarias de Puentes. Es un espacio dedicado y pensado para acompañar en distintos 
+                    desafíos a los hijos de las familias que conocemos a través de nuestras recorridas. <br> Todos los martes, los chicos y las chicas se acercan a 
+                    la parroquia para compartir una merienda. Después los ayudamos con las tareas del colegio o realizamos distintas actividades lúdicas para 
+                    estimular y reforzar habilidades. <br> Porque aprender también puede ser un lindo momento para compartir.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer-col">
+            <h3>Mapa del sitio</h3>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="proyectos.html">Proyectos y campañas</a></li>
+                <li><a href="forms.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contacto</h3>
+            <p>Mail: puentesorganizacion@gmail.com</p>
+            <p>Teléfono: 11 3541-7943</p>
+            <p>Vicente López, Buenos Aires</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Suscribite</h3>
+            <p>Recibí novedades de Puentes.</p>
+            <input type="email" placeholder="Tu mail">
+            <button type="button">Enviar</button>
+        </div>
+    </footer>
+    
+    <script src="script3.js"></script>
+</body>
+</html>

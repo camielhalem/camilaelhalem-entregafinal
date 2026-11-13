@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="flexNav">
+                <img src="imagenes/logito.png" alt="">
+                <li> <a href="index.html" class="link">Inicio</a></li>
+                <li> <a href="nosotros.html" class="link">Sobre nosotros</a></li>
+                <li> <a href="proyectos.html" class="link">Proyectos y campañas</a></li>
+                <li> <a href="forms.html" class="link">Contacto</a></li>
+                <li id="boton-oculto1">
+                    <a href="#" class="donar" onclick="abrirModal()">Donar</a>
+                </li>
+                <li id="boton-oculto2" style="position: relative">
+                    <a href="#" class="donar" onclick="abrirModal()">Donar</a>
+                </li>
+                <button onclick="flexToggle()">☰</button> 
+            </ul>
+        </nav>
+    </header>
+
+    <script src="script3.js"></script>
+    <div class="contenedor-form">
+        <form>
+            <h3>Información personal: </h3>
+
+            <label for="nombre"> Nombre: </label>
+            <input type="text" id="nombre"> <br><br>
+            <label for="apellido"> Apellido: </label>
+            <input type="text" id="nombre"> <br><br>
+            <label for="genero">Género</label>
+            <select id="genero">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+            </select> <br><br>
+            <label for="nacimiento"> Fecha de nacimiento: </label>
+            <input type="date" id="nacimiento"> <br><br>
+            <label for="documento">Tipo de documento</label>
+            <select id="documento">
+                <option value="DNI">DNI</option>
+                <option value="Cédula">Cédula</option>
+                <option value="Pasaporte">Pasaporte</option>
+                <option value="Otro">Otro</option>
+            </select> <br><br>
+            <label for="numero-doc">Número de documento: </label>
+            <input type="text" id="numero-doc"> <br><br>
+            <label for="nacionalidad">Nacionalidad: </label>
+            <input type="text" id="nacionalidad"> <br><br>
+
+            <h3>Información de contacto: </h3>
+
+            <label for="mail">Correo electrónico: </label>
+            <input type="email" id="mail"> <br><br>
+            <label for="tel">Número de celular: </label>
+            <input type="tel" id="tel"> <br><br>
+            <label for="direccion">Dirección: </label>
+            <input type="text" id="direccion"> <br><br>
+    
+            <h3>Información adicional: </h3>
+            <p>Elija sus puestos favoritos para colaborar: </p>
+            <input type="checkbox" id="recorrer" value="recorrer"> 
+            <label for="recorrer">Recorridas y entregas de donaciones</label><br>
+            <input type="checkbox" id="viandas" value="viandas"> 
+            <label for="viandas">Armado de viandas</label><br>
+            <input type="checkbox" id="cocina" value="cocina"> 
+            <label for="cocina">Cocinar las comidas</label><br>
+            <input type="checkbox" id="orden" value="orden"> 
+            <label for="orden">Orden de donaciones</label> <br><br>
+            <label for="voluntariado">¿Ha realizado voluntariado?</label>
+            <select id="voluntariado">
+                <option value="Sí, actualmente">Sí, actualmente</option>
+                <option value="Sí, hace poco tiempo">Sí, hace poco tiempo</option>
+                <option value="Sí, hace mucho tiempo">Sí, hace mucho tiempo</option>
+                <option value="No">No</option>
+            </select> <br><br>
+            <label for="contas">Contá sobre tu experiencia en el voluntariado que hayas participado</label> <br> <br>
+            <textarea id="contar" placeholder="Escriba aquí..."></textarea> <br> <br>
+            <label for="opinion">¿Cómo se enteró de Puentes?</label> <br> <br>
+            <textarea id="opinion" placeholder="Escriba aquí..."></textarea>   
+            <br><br>
+            <input type="submit" id="enviar">
+        </form>
+        <img src="imagenes/formulario.png" alt="" class="foto-form">
+    </div>
+
+    <footer id="footer">
+        <div class="footer-col">
+            <h3>Mapa del sitio</h3>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="proyectos.html">Proyectos y campañas</a></li>
+                <li><a href="forms.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contacto</h3>
+            <p>Mail: mail-de-la-ong@ejemplo.com</p>
+            <p>Teléfono: 11 0000-0000</p>
+            <p>Vicente López, Buenos Aires</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Suscribite</h3>
+            <p>Recibí novedades de Puentes.</p>
+            <input type="email" placeholder="Tu mail">
+            <button type="button">Enviar</button>
+        </div>
+    </footer>
+    <script src="script3.js"></script>
+    
+</body>
+</html>

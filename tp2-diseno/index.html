@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="flexNav">
+                <img src="imagenes/logito.png" alt="">
+                <li> <a href="index.html" class="link">Inicio</a></li>
+                <li> <a href="nosotros.html" class="link">Sobre nosotros</a></li>
+                <li> <a href="proyectos.html" class="link">Proyectos y campañas</a></li>
+                <li> <a href="forms.html" class="link">Contacto</a></li>
+                <li id="boton-oculto1">
+                    <a href="#" class="donar" onclick="abrirModal()">Donar</a>
+                </li>
+                <li id="boton-oculto2" style="position: relative">
+                    <a href="#" class="donar" onclick="abrirModal()">Donar</a>
+                </li>
+                <button onclick="flexToggle()">☰</button> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <img src="imagenes/portada.png" alt="">
+            <h1 class="voluntarios">Conocé algunas opiniones sobre esta <br> organización:</h1>
+            <p class="voluntarios">Algunos de los voluntarios quisieron compartir su <br> experiencia ayudando a esta ONG</p>
+            <a href="#opiniones">Conocé más</a>
+        </section>
+
+        <section id="opiniones">
+            <div id="texto-opiniones">
+                <ul>
+                    <li>
+                        <img src="imagenes/voluntario1.png" alt="" class="foto1">
+                        <h2>Lucía, 27 años</h2>
+                        <p>"Empecé a venir como voluntaria porque siempre quise hacer algo por los demás. Acá encontré un 
+                            lugar donde realmente se hace la diferencia. Me encanta poder compartir un rato, charlar y saber 
+                            que con algo tan simple como una comida podemos alegrar el día de alguien."
+                        </p>
+                    </li>
+                    <li class="abajo">
+                        <img src="imagenes/voluntario2.png" alt="">
+                        <h2>Santiago, 23 años</h2>
+                        <p>"Me gusta ser parte de un proyecto que realmente se preocupa por las personas. Acá todos 
+                            trabajamos con mucho compromiso y siempre hay un buen ambiente. Es lindo saber que, con el 
+                            esfuerzo de muchos, podemos mejorar un poco la realidad de quienes más lo necesitan."
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imagenes/voluntario3.png" alt="">
+                        <h2>Clara, 25 años</h2>
+                        <p>"Lo que más me gusta es el trato con las personas. Muchas veces llegamos con una vianda, pero 
+                            nos vamos con una historia, una charla, o una sonrisa que te cambia el día. Esta fundación me 
+                            recuerda que la empatía también alimenta."
+                        </p>
+                    </li>
+                    <li class="abajo">
+                        <img src="imagenes/voluntario4.png" alt="">
+                        <h2>Pedro, 32 años</h2>
+                        <p>"Ser parte de esta fundación me enseñó mucho. Me di cuenta que todos podemos aportar desde 
+                            nuestro lugar. Me gusta la organización, el trabajo en equipo y sentir que lo que hacemos 
+                            tiene un impacto positivo y real en la comunidad."
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="footer">
+        <div class="footer-col">
+            <h3>Mapa del sitio</h3>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="proyectos.html">Proyectos y campañas</a></li>
+                <li><a href="forms.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contacto</h3>
+            <p>Mail: mail-de-la-ong@ejemplo.com</p>
+            <p>Teléfono: 11 0000-0000</p>
+            <p>Vicente López, Buenos Aires</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Suscribite</h3>
+            <p>Recibí novedades de Puentes.</p>
+            <input type="email" placeholder="Tu mail">
+            <button type="button">Enviar</button>
+        </div>
+    </footer>
+    <script src="script3.js"></script>
+</body>
+</html>
